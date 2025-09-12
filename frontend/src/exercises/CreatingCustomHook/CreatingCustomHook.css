@@ -1,0 +1,31 @@
+.l-creating-custom-hook-container {
+  display: grid;
+  place-items: center;
+  max-width: 520px;
+  padding: 22px;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  border-radius: 12px;
+}
+
+.l-counter-container__btns-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.c-counter-container__btn {
+  background: linear-gradient(transparent, rgba(72, 77, 82, 0.2));
+  box-shadow: 0px 2px 5px 0px rgba(48, 53, 62, 0.2);
+  border-width: 0;
+}
+
+.c-counter-container__btn:active {
+  box-shadow: 0px 2px 7px 0px rgba(38, 42, 50, 0.25) inset;
+}
+
+.c-counter-container__output {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}

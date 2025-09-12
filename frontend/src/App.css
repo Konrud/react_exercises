@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.l-main {
+  display: grid;
+  place-items: center;
+  min-block-size: 100vh;
+  padding: 24px;
+}
+
+.l-section {
+  --section-width: 520;
+  width: 100%;
+  max-width: calc(var(--section-width) * 1px);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.c-main-title {
+  margin: 0;
+  margin-block-end: 12px;
+}
+
+.c-input {
+  width: 100%;
+  margin-block-end: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.c-paragraph {
+  margin-block-end: 2px;
+}
+
+.c-hint-text {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.c-hint-text--warning {
+  color: #6c1c18;
+}
+
+.c-button {
+  padding-block: 8px;
+  padding-inline: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

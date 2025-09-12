@@ -1,0 +1,36 @@
+.l-context-api-container {
+    display: grid;
+    place-items: center;
+    max-width: 520px;
+    padding: 22px;
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    border-radius: 12px;
+}
+
+.l-context-api-container:has([data-theme="dark"]) {
+    background-color: rgb(30, 41, 49);
+    color: white;
+}
+
+.l-context-api-container:has([data-theme="light"]) {
+    background-color: white;
+    color: rgb(30, 41, 49);
+}
+
+.c-theme-toggler {
+    margin-block-end: 12px;
+    padding: 8px 12px;
+}
+
+.c-theme-toggler__button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.c-nested-component {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+}
