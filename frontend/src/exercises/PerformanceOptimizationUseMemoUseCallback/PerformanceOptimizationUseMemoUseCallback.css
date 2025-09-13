@@ -1,0 +1,9 @@
+.l-performance-optimization-container {
+  display: grid;
+  place-items: center;
+  max-width: 520px;
+  padding: 22px;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  border-radius: 12px;
+}
