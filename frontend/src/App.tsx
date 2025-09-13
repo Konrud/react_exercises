@@ -1,12 +1,12 @@
 import "./App.css";
+import PerformanceOptimizationUseMemoUseCallback from "./exercises/PerformanceOptimizationUseMemoUseCallback/PerformanceOptimizationUseMemoUseCallback";
 // import FormsWithMultipleInputsAndValidation from "./exercises/FormsWithMultipleInputsAndValidation";
 // import ListsKeysMemoisation from "./exercises/ListsKeysMemoisation";
 // import DataFetchingWithUseEffect from "./exercises/DataFetchingWithUseEffect";
 // import UseEffectDependenciesAndInfiniteLoop from "./exercises/UseEffectDependenciesAndInfiniteLoop";
 // import ControlledInput from "./exercises/ControlledInput";
 // import ContextAPIAvoidPropDrilling from "./exercises/ContextAPIAvoidPropDrilling/ContextAPIAvoidPropDrilling";
-import CreatingCustomHook from "./exercises/CreatingCustomHook/CreatingCustomHook";
-
+// import CreatingCustomHook from "./exercises/CreatingCustomHook/CreatingCustomHook";
 
 function App() {
   return (
@@ -37,8 +37,12 @@ function App() {
         <ContextAPIAvoidPropDrilling />
       </section> */}
 
-      <section>
+      {/* <section>
         <CreatingCustomHook />
+      </section> */}
+
+      <section>
+        <PerformanceOptimizationUseMemoUseCallback />
       </section>
     </main>
   );
