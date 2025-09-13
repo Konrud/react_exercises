@@ -1,0 +1,17 @@
+.l-data-fetching-with-suspense-container {
+  display: grid;
+  place-items: center;
+  max-width: 520px;
+  padding: 22px 30px;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  border-radius: 12px;
+}
+
+.l-results-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+}
