@@ -1,0 +1,50 @@
+.l-suspense-lazy-loading-container {
+  display: grid;
+  place-items: center;
+  max-width: 520px;
+  padding: 22px 30px;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  border-radius: 12px;
+}
+
+.l-buttons-container {
+  margin-block-end: 1rem;
+}
+
+.l-buttons-container BUTTON {
+  background: linear-gradient(transparent, #212a3361);
+  border-width: 0;
+}
+
+.l-buttons-container BUTTON:active {
+  background: linear-gradient(#212a3361, transparent);
+}
+
+.l-settings-container {
+  padding-block: 10px;
+  border: 2px solid rgb(35, 35, 53);
+}
+
+.l-settings-container:empty:before {
+  content: "Settings Panel should be rendered here";
+  display: block;
+  padding-inline: 1rem;
+}
+
+.l-settings-container__settings-panel-wrapper {
+  padding: 0.7rem;
+}
+
+
+
+.c-settings-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-block-size: 300px;
+  padding: 14px 20px;
+  border: 1px solid rgb(43, 7, 14);
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px hsl(207.89deg 20.23% 10.29% / 32%);
+}

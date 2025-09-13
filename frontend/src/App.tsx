@@ -1,5 +1,6 @@
 import "./App.css";
-import PerformanceOptimizationUseMemoUseCallback from "./exercises/PerformanceOptimizationUseMemoUseCallback/PerformanceOptimizationUseMemoUseCallback";
+// import PerformanceOptimizationUseMemoUseCallback from "./exercises/PerformanceOptimizationUseMemoUseCallback/PerformanceOptimizationUseMemoUseCallback";
+import ReactSuspenseAndLazyLoading from "./exercises/ReactSuspenseAndLazyLoading/ReactSuspenseAndLazyLoading";
 // import FormsWithMultipleInputsAndValidation from "./exercises/FormsWithMultipleInputsAndValidation";
 // import ListsKeysMemoisation from "./exercises/ListsKeysMemoisation";
 // import DataFetchingWithUseEffect from "./exercises/DataFetchingWithUseEffect";
@@ -41,8 +42,12 @@ function App() {
         <CreatingCustomHook />
       </section> */}
 
-      <section>
+      {/* <section>
         <PerformanceOptimizationUseMemoUseCallback />
+      </section> */}
+
+      <section>
+        <ReactSuspenseAndLazyLoading />
       </section>
     </main>
   );
