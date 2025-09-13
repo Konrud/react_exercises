@@ -1,6 +1,7 @@
 import "./App.css";
+import DataFetchingWithReactSuspense from "./exercises/DataFetchingWithReactSuspense/DataFetchingWithReactSuspense";
 // import PerformanceOptimizationUseMemoUseCallback from "./exercises/PerformanceOptimizationUseMemoUseCallback/PerformanceOptimizationUseMemoUseCallback";
-import ReactSuspenseAndLazyLoading from "./exercises/ReactSuspenseAndLazyLoading/ReactSuspenseAndLazyLoading";
+// import ReactSuspenseAndLazyLoading from "./exercises/ReactSuspenseAndLazyLoading/ReactSuspenseAndLazyLoading";
 // import FormsWithMultipleInputsAndValidation from "./exercises/FormsWithMultipleInputsAndValidation";
 // import ListsKeysMemoisation from "./exercises/ListsKeysMemoisation";
 // import DataFetchingWithUseEffect from "./exercises/DataFetchingWithUseEffect";
@@ -47,7 +48,7 @@ function App() {
       </section> */}
 
       <section>
-        <ReactSuspenseAndLazyLoading />
+        <DataFetchingWithReactSuspense />
       </section>
     </main>
   );
