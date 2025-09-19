@@ -1,5 +1,7 @@
 import "./App.css";
-import DataFetchingWithReactSuspense from "./exercises/DataFetchingWithReactSuspense/DataFetchingWithReactSuspense";
+// import DataFetchingWithReactSuspense from "./exercises/DataFetchingWithReactSuspense/DataFetchingWithReactSuspense";
+// import SearchWithDebouncedAPICalls from "./exercises/SearchWithDebouncedAPICalls/SearchWithDebouncedAPICalls";
+import SearchWithRequestCaching from "./exercises/SearchWithRequestCaching/SearchWithRequestCaching";
 // import PerformanceOptimizationUseMemoUseCallback from "./exercises/PerformanceOptimizationUseMemoUseCallback/PerformanceOptimizationUseMemoUseCallback";
 // import ReactSuspenseAndLazyLoading from "./exercises/ReactSuspenseAndLazyLoading/ReactSuspenseAndLazyLoading";
 // import FormsWithMultipleInputsAndValidation from "./exercises/FormsWithMultipleInputsAndValidation";
@@ -47,8 +49,16 @@ function App() {
         <PerformanceOptimizationUseMemoUseCallback />
       </section> */}
 
-      <section>
+      {/* <section>
         <DataFetchingWithReactSuspense />
+      </section> */}
+
+      {/* <section>
+        <SearchWithDebouncedAPICalls />
+      </section> */}
+
+      <section>
+        <SearchWithRequestCaching />
       </section>
     </main>
   );
