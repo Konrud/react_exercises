@@ -118,7 +118,7 @@ export const HandlingErrorsInAsyncReactCode: React.FC = () => {
 
   return (
     <div className="l-search-container">
-      <h2 className="c-search-title">Search With Debounced API Calls</h2>
+      <h2 className="c-search-title">Handling Errors In Async React Code</h2>
       <div>
         <input type="text" value={query} onChange={onInputChange} className="c-search-input" />
       </div>
