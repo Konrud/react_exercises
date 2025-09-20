@@ -1,0 +1,29 @@
+.l-search-container {
+    display: grid;
+    place-items: center;
+    max-width: 520px;
+    padding: 22px;
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    border-radius: 12px;
+}
+
+.c-search-input {
+    width: 100%;
+    margin-block-end: 12px;
+    padding: 8px;
+}
+
+.c-loading-message {
+    padding-block: 8px;
+    padding-inline: 4px;
+}
+
+.c-error-message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(125, 39, 39);
+    margin-block: 12px;
+    padding: 8px;
+}
