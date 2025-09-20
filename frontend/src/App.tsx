@@ -1,7 +1,8 @@
 import "./App.css";
+import HandlingErrorsInAsyncReactCode from "./exercises/HandlingErrorsInAsyncReactCode/HandlingErrorsInAsyncReactCode";
 // import DataFetchingWithReactSuspense from "./exercises/DataFetchingWithReactSuspense/DataFetchingWithReactSuspense";
 // import SearchWithDebouncedAPICalls from "./exercises/SearchWithDebouncedAPICalls/SearchWithDebouncedAPICalls";
-import SearchWithRequestCaching from "./exercises/SearchWithRequestCaching/SearchWithRequestCaching";
+// import SearchWithRequestCaching from "./exercises/SearchWithRequestCaching/SearchWithRequestCaching";
 // import PerformanceOptimizationUseMemoUseCallback from "./exercises/PerformanceOptimizationUseMemoUseCallback/PerformanceOptimizationUseMemoUseCallback";
 // import ReactSuspenseAndLazyLoading from "./exercises/ReactSuspenseAndLazyLoading/ReactSuspenseAndLazyLoading";
 // import FormsWithMultipleInputsAndValidation from "./exercises/FormsWithMultipleInputsAndValidation";
@@ -58,7 +59,7 @@ function App() {
       </section> */}
 
       <section>
-        <SearchWithRequestCaching />
+        <HandlingErrorsInAsyncReactCode />
       </section>
     </main>
   );
