@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./HandlingErrorsInAsyncReactCode.css";
 import type { Post } from "../../types/Post";
 
@@ -54,15 +54,50 @@ export const HandlingErrorsInAsyncReactCode: React.FC = () => {
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const debounceTimerID = useRef<number | undefined>(undefined);
-  const [isRetry, setIsRetry] = useState<boolean>(false);
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
   };
 
   const retryFetch = () => {
-    setIsRetry(true);
+    performSearch(query);
   };
+
+  const performSearch = useCallback(async (query: string) => {
+    const normalizedQuery = query?.trim().toLowerCase();
+
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    if (!normalizedQuery) {
+      setResults([]);
+      setIsLoading(false);
+      return;
+    }
+
+    const loadingTimeoutID = setTimeout(() => {
+      // Only show loading indicator if request takes longer than Xms
+      setIsLoading(true);
+    }, 90);
+
+    setError(null);
+
+    abortControllerRef.current = new AbortController();
+
+    try {
+      const data = await SearchForPosts(normalizedQuery, abortControllerRef.current.signal);
+
+      setResults(data);
+    } catch (err) {
+      console.error(err);
+      setError((err as Error).message);
+      setResults([]);
+    } finally {
+      clearTimeout(loadingTimeoutID);
+      setIsLoading(false);
+    }
+  }, []);
 
   useEffect(() => {
     if (debounceTimerID.current) {
@@ -71,43 +106,15 @@ export const HandlingErrorsInAsyncReactCode: React.FC = () => {
 
     setError(null);
 
-    if (query.length === 0) {
-      setResults([]);
-      setIsLoading(false);
-      return;
-    }
-
-    const normalizedQuery = query.trim().toLowerCase();
-
     debounceTimerID.current = setTimeout(() => {
-      if (abortControllerRef.current) {
-        abortControllerRef.current.abort();
-      }
-
-      abortControllerRef.current = new AbortController();
-
-      setIsLoading(true);
-
-      SearchForPosts(normalizedQuery, abortControllerRef.current.signal)
-        .then((data) => {
-          setResults(data);
-        })
-        .catch((err) => {
-          console.error(err);
-          setError(err.message);
-          setResults([]);
-        })
-        .finally(() => {
-          setIsRetry(false);
-          setIsLoading(false);
-        });
+      performSearch(query);
     }, 500);
 
     return () => {
       abortControllerRef.current?.abort();
       clearTimeout(debounceTimerID.current);
     };
-  }, [query, isRetry]);
+  }, [query]);
 
   return (
     <div className="l-search-container">
