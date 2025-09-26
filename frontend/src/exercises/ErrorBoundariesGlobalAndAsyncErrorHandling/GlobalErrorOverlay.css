@@ -1,0 +1,20 @@
+.c-global-error {
+    position: fixed;
+    inset: 0;
+    inset-block-end: auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(126, 13, 13, 0.9);
+    color: rgb(252, 252, 252);
+}
+
+.c-global-error__btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #260c0c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
