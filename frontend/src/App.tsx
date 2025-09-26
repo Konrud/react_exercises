@@ -1,5 +1,6 @@
 import "./App.css";
-import ErrorBoundariesGlobalErrorHandling from "./exercises/ErrorBoundariesGlobalErrorHandling/ErrorBoundariesGlobalErrorHandling";
+import ErrorBoundariesGlobalAndAsyncErrorHandling from "./exercises/ErrorBoundariesGlobalAndAsyncErrorHandling/ErrorBoundariesGlobalAndAsyncErrorHandling";
+// import ErrorBoundariesGlobalErrorHandling from "./exercises/ErrorBoundariesGlobalErrorHandling/ErrorBoundariesGlobalErrorHandling";
 // import HandlingErrorsInAsyncReactCode from "./exercises/HandlingErrorsInAsyncReactCode/HandlingErrorsInAsyncReactCode";
 // import DataFetchingWithReactSuspense from "./exercises/DataFetchingWithReactSuspense/DataFetchingWithReactSuspense";
 // import SearchWithDebouncedAPICalls from "./exercises/SearchWithDebouncedAPICalls/SearchWithDebouncedAPICalls";
@@ -63,8 +64,12 @@ function App() {
         <HandlingErrorsInAsyncReactCode />
       </section> */}
 
-      <section>
+      {/* <section>
         <ErrorBoundariesGlobalErrorHandling />
+      </section> */}
+
+      <section>
+        <ErrorBoundariesGlobalAndAsyncErrorHandling />
       </section>
     </main>
   );
