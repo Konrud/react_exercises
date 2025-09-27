@@ -1,5 +1,6 @@
 import "./App.css";
-import ErrorBoundariesGlobalAndAsyncErrorHandling from "./exercises/ErrorBoundariesGlobalAndAsyncErrorHandling/ErrorBoundariesGlobalAndAsyncErrorHandling";
+// import ErrorBoundariesGlobalAndAsyncErrorHandling from "./exercises/ErrorBoundariesGlobalAndAsyncErrorHandling/ErrorBoundariesGlobalAndAsyncErrorHandling";
+import ManagingComplexStateWithUseReducer from "./exercises/ManagingComplexStateWithUseReducer/ManagingComplexStateWithUseReducer";
 // import ErrorBoundariesGlobalErrorHandling from "./exercises/ErrorBoundariesGlobalErrorHandling/ErrorBoundariesGlobalErrorHandling";
 // import HandlingErrorsInAsyncReactCode from "./exercises/HandlingErrorsInAsyncReactCode/HandlingErrorsInAsyncReactCode";
 // import DataFetchingWithReactSuspense from "./exercises/DataFetchingWithReactSuspense/DataFetchingWithReactSuspense";
@@ -68,8 +69,12 @@ function App() {
         <ErrorBoundariesGlobalErrorHandling />
       </section> */}
 
-      <section>
+      {/* <section>
         <ErrorBoundariesGlobalAndAsyncErrorHandling />
+      </section> */}
+
+      <section>
+        <ManagingComplexStateWithUseReducer />
       </section>
     </main>
   );
